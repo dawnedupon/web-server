@@ -19,7 +19,7 @@ app.use(middleware.logger);
 
 //Calling middleware in a specific route
 app.get('/about', middleware.requireAuthentication, function(req, res) { //forward slash means root
-  res.send('About Us'); //send a response
+  res.send('About Us...'); //send a response
 });
 
 //the folder you want to expose
