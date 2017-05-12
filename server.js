@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var PORT = 3000; //saying that the value should be constant
+var PORT = process.env.PORT || 3000; //capitals: saying that the value should be constant
 var middleware = require('./middleware.js');
 
 //Calling middleware at app level
